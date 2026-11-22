@@ -11,16 +11,16 @@ Reference results from the validation run on the system shown in each section (r
 ## smoke
 
 - **System:** 1× NVIDIA H100 80GB HBM3 (81559 MiB) · Intel(R) Xeon(R) Platinum 8470 · Ubuntu 24.04.5 LTS · kernel 6.8.0-149-generic · driver 595.112.07
-- **Run:** 2026-11-22T11:01:43Z · status **PASS** (exit 0)
-- **Time (mm:ss):** setup 00:32 · benchmark 00:01 · whole run 00:39
-- **Source:** run 217_20261122_110143
+- **Run:** 2026-11-22T14:29:35Z · status **PASS** (exit 0)
+- **Time (mm:ss):** setup 00:32 · benchmark 00:02 · whole run 00:40
+- **Source:** run 217_20261122_142935
 - **Command:** `bash run_benchmark.sh --smoke --dtype f32_r --M 64 --N 64 --K 64 --transposeA N --transposeB N --alpha 1 --beta 0 --lda 64 --ldb 64 --ldc 64 --batch-count 1 --warmup-iters 2 --num-iterations 2 --norm-check 1`
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | Achieved compute throughput, TFLOP/s (achieved_compute_tflops) | 0.048762 |
-| 2 | Kernel execution time (kernel_time_msec) | 0.010752 |
-| 3 | Minimum operand traffic, GB/s (minimum_operand_traffic_gb_s) | 4.571429 |
+| 1 | Achieved compute throughput, TFLOP/s (achieved_compute_tflops) | 0.049054 |
+| 2 | Kernel execution time (kernel_time_msec) | 0.010688 |
+| 3 | Minimum operand traffic, GB/s (minimum_operand_traffic_gb_s) | 4.598802 |
 | 4 | Relative L1 of checked columns (relative_l1_checked_columns) | 2.59177062e-08 |
 | 5 | Relative L2 error of checked columns (norm_error_2) | 5.07249905e-08 |
 <!-- /profile:smoke -->
